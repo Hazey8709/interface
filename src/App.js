@@ -6,7 +6,7 @@ import StatusBar from "./components/statusComp/StatusBar";
 function App() {
     return (
         <>
-            <StatusBar />
+            <StatusBar userName='Jordan F' />
             <h2 style={style.title}>Up & Running on Port: 3000 </h2>
         </>
     );
