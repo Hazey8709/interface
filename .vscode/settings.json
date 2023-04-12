@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.scrollback": 1500,
+    "terminal.integrated.shellIntegration.history": 1500,
+    "terminal.integrated.shellIntegration.enabled": false
+}

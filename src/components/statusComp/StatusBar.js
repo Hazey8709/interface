@@ -27,6 +27,7 @@ const style = {
         flexDirection: "row",
         border: ".2rem solid black",
         height: "5rem",
+        width: "100%" /* Check this after place,ent is done */,
         backgroundColor: "#0005",
     },
 
