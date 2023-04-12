@@ -3,6 +3,8 @@ import Nav from "./components/navComp/Nav";
 
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
+import Todo from "./pages/Todo";
+import Mapbox from "./pages/Mapbox";
 import Profile from "./pages/Profile";
 
 function App() {
@@ -16,9 +18,9 @@ function App() {
                     {/* <Dashboard /> */}
                     <Routes>
                         <Route path='/dashboard' element={<Dashboard />} />
+                        <Route path='/todo' element={<Todo />} />
+                        <Route path='/mapbox' element={<Mapbox />} />
                         <Route path='/profile' element={<Profile />} />
-                        {/* <Route path='/' element={< />} /> */}
-                        {/* <Route path='/' element={< />} /> */}
                     </Routes>
                 </section>
             </main>

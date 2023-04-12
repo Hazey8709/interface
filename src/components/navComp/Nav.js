@@ -12,15 +12,15 @@ const Nav = () => {
                     Dashboard
                 </Link>
 
-                <Link to='/todoList' style={style.navLink}>
+                <Link to='/Todo' style={style.navLink}>
                     Todo-List
                 </Link>
 
-                <Link to='/mapbox' style={style.navLink}>
+                <Link to='/Mapbox' style={style.navLink}>
                     Mapbox
                 </Link>
 
-                <Link to='/profile' style={style.navLink}>
+                <Link to='/Profile' style={style.navLink}>
                     Profile
                 </Link>
             </section>
