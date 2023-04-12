@@ -2,8 +2,8 @@ import StatusBar from "./components/statusComp/StatusBar";
 import Nav from "./components/navComp/Nav";
 
 import { Route, Routes } from "react-router-dom";
-import Dashboard from "./pages/Dashboard"
-
+import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
 
 function App() {
     return (
@@ -13,8 +13,12 @@ function App() {
             <main style={style.mainCont}>
                 <Nav />
                 <section style={style.mainContent}>
+                    {/* <Dashboard /> */}
                     <Routes>
-                        <Route path='Dashboard' element={<Dashboard />} />
+                        <Route path='/dashboard' element={<Dashboard />} />
+                        <Route path='/profile' element={<Profile />} />
+                        {/* <Route path='/' element={< />} /> */}
+                        {/* <Route path='/' element={< />} /> */}
                     </Routes>
                 </section>
             </main>
@@ -39,7 +43,7 @@ const style = {
     },
 
     mainContent: {
-        border: ".1rem solid blue", /* delete after */
+        border: ".1rem solid blue" /* delete after */,
         width: "100%",
     },
 };
