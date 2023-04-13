@@ -21,7 +21,7 @@
 **Dev**: Development<br>
 
 # API's
-**Rechart** <br>
+**Recharts:** **Link**: *https://recharts.org/en-US/guide* <br> 
 **Mapbox-gl** <br>
 **Faker.js** <br>
 
