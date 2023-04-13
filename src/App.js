@@ -15,7 +15,6 @@ function App() {
             <main style={style.mainCont}>
                 <Nav />
                 <section style={style.mainContent}>
-                    {/* <Dashboard /> */}
                     <Routes>
                         <Route path='/dashboard' element={<Dashboard />} />
                         <Route path='todo' element={<Todo />} />
