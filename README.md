@@ -20,7 +20,7 @@
 **Main**: Final Project <br>
 **Dev**: Development<br>
 
-# API's
+# Library's
 **Recharts**: **Link**: *https://recharts.org/en-US/guide* <br> 
 **Mapbox-gl**: <br>
 **Random User Generator**: *https://randomuser.me/* <br>
