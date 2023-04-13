@@ -18,9 +18,9 @@ function App() {
                     {/* <Dashboard /> */}
                     <Routes>
                         <Route path='/dashboard' element={<Dashboard />} />
-                        <Route path='/todo' element={<Todo />} />
-                        <Route path='/mapbox' element={<Mapbox />} />
-                        <Route path='/profile' element={<Profile />} />
+                        <Route path='todo' element={<Todo />} />
+                        <Route path='mapbox' element={<Mapbox />} />
+                        <Route path='profile' element={<Profile />} />
                     </Routes>
                 </section>
             </main>
