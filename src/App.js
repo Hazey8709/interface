@@ -1,10 +1,10 @@
 import StatusBar from "./components/statusComp/StatusBar";
 import Nav from "./components/navComp/Nav";
-
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Todo from "./pages/Todo";
 import Mapbox from "./pages/Mapbox";
+import "mapbox-gl/dist/mapbox-gl.css";
 import Profile from "./pages/Profile";
 
 function App() {
