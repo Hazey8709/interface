@@ -21,9 +21,9 @@
 **Dev**: Development<br>
 
 # API's
-**Recharts:** **Link**: *https://recharts.org/en-US/guide* <br> 
-**Mapbox-gl** <br>
-**Faker.js** <br>
+**Recharts**: **Link**: *https://recharts.org/en-US/guide* <br> 
+**Mapbox-gl**: <br>
+**Random User Generator**: *https://randomuser.me/* <br>
 
 
 
