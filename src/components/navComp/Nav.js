@@ -1,6 +1,7 @@
 import React from "react";
 // import { GoTriangleRight } from "react-icons/go";
 import { Link } from "react-router-dom";
+import QuickLinks from "./QuickLinks";
 
 const Nav = () => {
     return (
@@ -23,6 +24,11 @@ const Nav = () => {
                 <Link to='/Profile' style={style.navLink}>
                     Profile
                 </Link>
+            </section>
+            <section style={style.quickLinksCont}>
+                <div style={style.box}>
+                    <QuickLinks />
+                </div>
             </section>
         </nav>
     );
@@ -78,5 +84,19 @@ const style = {
         fontSize: "24px",
         fontWeight: "bold",
         textDecoration: "none",
+    },
+
+    //! Quick Links
+    quickLinksCont: {
+        //border: ".1rem solid yellow",
+        height: "13.2rem",
+        marginTop: "3rem",
+        //backgroundColor: "#0005",
+    },
+
+    box: {
+        //border: ".1rem solid pink",
+        //height: "13rem",
+        //backgroundColor: "#0005",
     },
 };

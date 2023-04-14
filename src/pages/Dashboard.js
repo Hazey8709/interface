@@ -13,12 +13,12 @@ function Dashboard() {
 
             <div style={style.chartHorz}>
                 {chartHorz.map((chartHorz, id) => (
-                    <ChartHorz Key={id} id={id} chartHorz={chartHorz} />
+                    <ChartHorz key={id} id={id} chartHorz={chartHorz} />
                 ))}
             </div>
             <div style={style.chartSmall}>
                 {chartSmall.map((chartSmall, id) => (
-                    <ChartSmall Key={id} id={id} chartSmall={chartSmall} />
+                    <ChartSmall key={id} id={id} chartSmall={chartSmall} />
                 ))}
             </div>
         </section>
