@@ -1,12 +1,28 @@
-import React from "react";
-// import { GoTriangleRight } from "react-icons/go";
+import React, { useState, useEffect } from "react";
+import UserPic from "./UserPic";
 import { Link } from "react-router-dom";
 import QuickLinks from "./QuickLinks";
 
-const Nav = () => {
+const Nav = (prop) => {
+    const [userData, setUserData] = useState(null);
+
+    useEffect(() => {
+        async function fetchApi() {
+            const response = await fetch("https://randomuser.me/api/1.4/");
+            const data = await response.json();
+            const [user] = data.results;
+            // console.log(user);
+
+            setUserData(user);
+        }
+        fetchApi();
+    }, []);
+
     return (
         <nav style={style.navCont}>
-            <div style={style.picCont}></div>
+            <div style={style.picCont}>
+                {userData && <UserPic avatar={userData.picture.large} />}
+            </div>
 
             <section style={style.navBtnCont}>
                 <Link to='/dashBoard' style={style.navLink}>
@@ -50,10 +66,11 @@ const style = {
     },
 
     picCont: {
-        border: ".1rem solid blue",
-        backgroundColor: "#0005",
-        height: "8rem",
-        width: "8rem",
+        //border: ".1rem solid blue",
+        //backgroundColor: "#0005",
+        //borderRadius: "10rem",
+        //height: "8rem",
+        //width: "8rem",
         margin: "0 auto",
         marginTop: "5rem",
     },
@@ -72,7 +89,7 @@ const style = {
     navLink: {
         display: "block",
         //padding: "1rem",
-        //border: ".1rem solid red",
+        border: ".1rem solid white",
         borderRadius: "10px",
         backgroundColor: "#0005",
         width: "8rem",

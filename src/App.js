@@ -11,7 +11,7 @@ function App() {
     return (
         <>
             <StatusBar userName='Jordan F' />
-            {/* <Nav /> */}
+
             <main style={style.mainCont}>
                 <Nav />
                 <section style={style.mainContent}>

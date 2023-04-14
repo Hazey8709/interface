@@ -6,7 +6,7 @@ function Profile() {
 
     useEffect(() => {
         async function fetchApi() {
-            const response = await fetch("https://randomuser.me/api/");
+            const response = await fetch("https://randomuser.me/api/1.4/");
             const data = await response.json();
             const [user] = data.results;
             // console.log(user);

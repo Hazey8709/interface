@@ -65,8 +65,6 @@ const QuickLinks = (props) => {
             </div>
 
             <div style={style.iconCont}>
-                
-
                 <a
                     style={style.link}
                     href='https://main.d1c74q1u2phtya.amplifyapp.com/'
