@@ -63,27 +63,28 @@ I'm using the router to change pages from navigation component. The pages won't 
 to see the project and have a basic layout. Links will be functional in Quick-Links box below navigation. The Quick Links box will <br>
 have various links to my projects or sites. <br>
 
-**⚙️ Overview** - Write overview here. <br>
-**🌵 Challenges** - Write challenges here. <br>
-**🏆 Accomplishments** - Write Accomplishments here. <br>
-**🔮 Next Steps** - Write your next steps here. <br>
+
+**🌵 Challenges**: Getting mapbox up and running as expected has been giving me an issue. Working on it and might change to a  <br>
+react map library instead. Depending how it goes i'll make a decision. <br>
+**🏆 Accomplishments**: For the most part everything seems to be going smoothly & mostly everything is laid out. <br>
+
 
 ### Project Page Details: <br>  
 #### Page #1   
-- Name  
-- Purpose   
+- Name:  Dashboard
+- Purpose: The purpose of the dashboard is to display 2 charts with a variety of information.
 
 #### Page #2   
-- Name  
-- Purpose   
+- Name:  Todo-List
+- Purpose:  Todo list page will serve as note keeping like a basic todo list add/delete.
 
 #### Page #3   
-- Name  
-- Purpose   
+- Name:  Mapbox
+- Purpose:   This will display a interactive map (not-working-yet)
 
 #### Page #4   
-- Name  
-- Purpose   
+- Name:  Profile
+- Purpose:   Profile page will display a variety of user information.
 
 
 
