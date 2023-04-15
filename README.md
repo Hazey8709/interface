@@ -72,19 +72,19 @@ react map library instead. Depending how it goes i'll make a decision. <br>
 ### Project Page Details: <br>  
 #### Page #1   
 - Name:  Dashboard
-- Purpose: The purpose of the dashboard is to display 2 charts with a variety of information.
+- Purpose: *The purpose of the dashboard is to display 2 charts with a variety of information.*
 
 #### Page #2   
 - Name:  Todo-List
-- Purpose:  Todo list page will serve as note keeping like a basic todo list add/delete.
+- Purpose:  *Todo list page will serve as note keeping like a basic todo list add/delete.*
 
 #### Page #3   
 - Name:  Mapbox
-- Purpose:   This will display a interactive map (not-working-yet)
+- Purpose:   *This will display a interactive map (not-working-yet)*
 
 #### Page #4   
 - Name:  Profile
-- Purpose:   Profile page will display a variety of user information.
+- Purpose:   *Profile page will display a variety of user information.*
 
 
 
