@@ -61,9 +61,37 @@ I'm using the router to change pages from navigation component. The pages won't 
 to see the project and have a basic layout. Links will be functional in Quick-Links box below navigation. The Quick Links box will <br>
 have various links to my projects or sites. <br>
 
+**⚙️ Overview** - Write overview here. <br>
+**🌵 Challenges** - Write challenges here. <br>
+**🏆 Accomplishments** - Write Accomplishments here. <br>
+**🔮 Next Steps** - Write your next steps here. <br>
+
+### Project Page Details: <br>  
+#### Page #1   
+- Name  
+- Purpose   
+
+#### Page #2   
+- Name  
+- Purpose   
+
+#### Page #3   
+- Name  
+- Purpose   
+
+#### Page #4   
+- Name  
+- Purpose   
+
+
+
 <br>
 <br>
 
+
+
+
+----------------------------------------------------------------------------------------------------- <br>
 ## 📢 &nbsp; Milestone Check-Ins
 
 Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going.  
