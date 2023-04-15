@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Todo from "./pages/Todo";
 import Mapbox from "./pages/Mapbox";
-//import "mapbox-gl/dist/mapbox-gl.css";
 import Profile from "./pages/Profile";
 
 function App() {
@@ -17,10 +16,10 @@ function App() {
                 <section style={style.mainContent}>
                     <Routes>
                         <Route path='/' element={<Dashboard />} />
-                        <Route path='dashboard' element={<Dashboard />} />
-                        <Route path='todo' element={<Todo />} />
-                        <Route path='mapbox' element={<Mapbox />} />
-                        <Route path='profile' element={<Profile />} />
+                        <Route path='Dashboard' element={<Dashboard />} />
+                        <Route path='Todo' element={<Todo />} />
+                        <Route path='Mapbox' element={<Mapbox />} />
+                        <Route path='Profile' element={<Profile />} />
                     </Routes>
                 </section>
             </main>
