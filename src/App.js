@@ -35,7 +35,7 @@ const style = {
         flexDirection: "row",
         //position: "absolute", /* delete after */
         alignItems: "stretch",
-        border: ".2rem solid red" /* delete after */,
+        //border: ".2rem solid red" /* delete after */,
         borderTop: "none" /* delete after */,
         borderLeft: "none" /* delete after */,
         height: "100%",
@@ -44,7 +44,9 @@ const style = {
     },
 
     mainContent: {
-        border: ".1rem solid blue" /* delete after */,
+        border: ".1rem solid #464444" /* delete after */,
+        borderTop: "none",
+        borderLeft: "none",
         width: "100%",
     },
 };
