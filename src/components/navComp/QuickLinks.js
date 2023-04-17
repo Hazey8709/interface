@@ -99,7 +99,7 @@ export default QuickLinks;
 const style = {
     iconCont: {
         border: "1px solid white",
-        backgroundColor: "#0005",
+        backgroundColor: "#7e7d7d",
         borderRadius: ".5rem",
         textAlign: "center",
         margin: "0 auto",
