@@ -63,27 +63,28 @@ I'm using the router to change pages from navigation component. The pages won't 
 to see the project and have a basic layout. Links will be functional in Quick-Links box below navigation. The Quick Links box will <br>
 have various links to my projects or sites. <br>
 
-**⚙️ Overview** - Write overview here. <br>
-**🌵 Challenges** - Write challenges here. <br>
-**🏆 Accomplishments** - Write Accomplishments here. <br>
-**🔮 Next Steps** - Write your next steps here. <br>
+
+**🌵 Challenges**: Getting mapbox up and running as expected has been giving me an issue. Working on it and might change to a  <br>
+react map library instead. Depending how it goes i'll make a decision. <br>
+**🏆 Accomplishments**: For the most part everything seems to be going smoothly & mostly everything is laid out. <br>
+
 
 ### Project Page Details: <br>  
 #### Page #1   
-- Name  
-- Purpose   
+- Name:  Dashboard
+- Purpose: *The purpose of the dashboard is to display 2 charts with a variety of information.*
 
 #### Page #2   
-- Name  
-- Purpose   
+- Name:  Todo-List
+- Purpose:  *Todo list page will serve as note keeping like a basic todo list add/delete.*
 
 #### Page #3   
-- Name  
-- Purpose   
+- Name:  Mapbox
+- Purpose:   *This will display a interactive map (not-working-yet)*
 
 #### Page #4   
-- Name  
-- Purpose   
+- Name:  Profile
+- Purpose:   *Profile page will display a variety of user information.*
 
 
 
@@ -95,64 +96,6 @@ have various links to my projects or sites. <br>
 
 ----------------------------------------------------------------------------------------------------- <br>
 ## 📢 &nbsp; Milestone Check-Ins
-
-Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going.  
-Use the prompts below as a guide on what to write about.    
-For each Milestone #2-4, you should use all 4 icons.   
-
-⚙️ Overview - What I worked on this past week
-<br>
-🌵 Challenges - What problems did I have & how I'm addressing them
-<br>
-🏆 Accomplishments - What is something I "leveled up" on this week
-<br>
-🔮 Next Steps - What I plan to prioritize and do next
-
-<br>
-
-### Milestone 1
-
-For this milestone you will have created a wireframe prototype in Figma.   
-Post your link here, so you have easy access to it.
-- Figma Link
-
-
-<br>
-
-### Milestone 2
-⚙️ Overview - Write overview here.
-<br>
-🌵 Challenges - Write challenges here.
-<br>
-🏆 Accomplishments - Write Accomplishments here.
-<br>
-🔮 Next Steps - Write your next steps here.
-
-<br>
-
-Please discuss the following:  
-#### Page #1   
-- Name  
-- Purpose   
-
-#### Page #2   
-- Name  
-- Purpose   
-
-#### Page #3   
-- Name  
-- Purpose   
-
-#### Page #4   
-- Name  
-- Purpose   
-
-#### Remember that creating a project board, issues, and milestones is 50% of your grade!     
-If you are having trouble, contact your instructor ASAP, you might need to be part of the ePortoflio group to have better access.
-
-
-
-
 <br>
 
 ### Milestone 3
