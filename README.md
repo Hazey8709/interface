@@ -36,8 +36,9 @@
 *"Milestone2" branch is Mod-2, 2.3 final result. This branch is still a work in progress and <br>
 more will be added next week for Mod-3. Everything is working for the most part react routing <br>
 works as expected, profile page is up and works just needs some alignment & design changes. Todo-List <br>
-page works and todoList is functional but not best practice(Might get changed to Roller Dex). Dashboard loads maps and works correctly <br>
-but could use some changes. Mapbox is not functional yet and is a work in progress but page does work*. <br>
+page works and todoList is functional but not best practice(Might get changed to Roller Dex). Dashboard loads <br>
+maps and works correctly but could use some changes. Mapbox is not functional yet and is a work in progress <br>
+but page does work*. <br>
 
 
 # Library's
