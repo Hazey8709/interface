@@ -26,9 +26,12 @@ const style = {
         display: "flex",
         flexDirection: "row",
         border: ".2rem solid #464444",
+        borderRight: ".1rem solid #464444",
+        borderLeft: "none",
+        borderTop: "none",
         backgroundColor: "#7e7d7d",
         height: "5rem",
-        width: "100%" /* Check this after place,ent is done */,
+        width: "100%" /* Check this after placement is done */,
     },
 
     logoCont: {
