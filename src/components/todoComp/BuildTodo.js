@@ -1,6 +1,6 @@
 import React from "react";
-const { v4: uuidv4 } = require("uuid");
-console.log(uuidv4);
+const { v4: uuid4 } = require("uuid");
+//console.log(uuid4);
 
 const Local_STORAGE_KEY = "Saved-Todos";
 
@@ -27,7 +27,7 @@ const BuildTodo = () => {
         e.preventDefault();
 
         const newTodo = {
-            id: uuidv4(),
+            id: uuid4(),
             text: todo,
             completed: false,
         };
