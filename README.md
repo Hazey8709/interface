@@ -23,6 +23,23 @@
 **Dev**: Development <br>
 **MileStone2**: Mod-2 Final<br>
 
+# Branch Details:
+
+#### Main: 
+*The "Main" branch was orignally the project shell. Had an issue merging branches and  <br>
+"Main" branch became the final result of project*.  <br>
+
+#### Dev: 
+*The "Dev" branch is for development only*. <br>
+
+#### MileStone2: 
+*"Milestone2" branch is Mod-2, 2.3 final result. This branch is still a work in progress and <br>
+more will be added next week for Mod-3. Everything is working for the most part react routing <br>
+works as expected, profile page is up and works just needs some alignment & design changes. Todo-List <br>
+page works and todoList is functional but not best practice(Might get changed to Roller Dex). Dashboard loads maps and works correctly <br>
+but could use some changes. Mapbox is not functional yet and is a work in progress but page does work*. <br>
+
+
 # Library's
 **Recharts**: **Link**: *https://recharts.org/en-US/guide* <br>
 **Mapbox-gl**: <br>
@@ -31,7 +48,7 @@
 
 
 # Details:
-
+*In-Progress*
 **Using**: *React, React-Router, React-Router-Dom, NPM, Express, Axios, nodemon.*   <br>
 <br>
 *My Final Project is Interface. Interface is a user interface where you can keep notes,  <br>
