@@ -19,11 +19,12 @@
 
 # Branch:
 
-**Main**: Final Project <br>
-**Dev**: Development<br>
+**Main**: Final-Project  <br>
+**Dev**: Development <br>
+**MileStone2**: Mod-2 Final<br>
 
 # Library's
-**Recharts**: **Link**: *https://recharts.org/en-US/guide* <br> 
+**Recharts**: **Link**: *https://recharts.org/en-US/guide* <br>
 **Mapbox-gl**: <br>
 **Random User Generator**: *https://randomuser.me/* <br>
 
@@ -34,7 +35,7 @@
 **Using**: *React, React-Router, React-Router-Dom, NPM, Express, Axios, nodemon.*   <br>
 <br>
 *My Final Project is Interface. Interface is a user interface where you can keep notes,  <br>
-look things in the 3D/2D map and Has a User Profile. We will be using Recharts API, Mapbox-gl API, <br>
+look things up on the 3D/2D map and Has a User Profile. We will be using Recharts API, Mapbox-gl API, <br>
 Faker.js API.*
 
 
@@ -69,20 +70,21 @@ react map library instead. Depending how it goes i'll make a decision. <br>
 **🏆 Accomplishments**: For the most part everything seems to be going smoothly & mostly everything is laid out. <br>
 
 
-### Project Page Details: <br>  
-#### Page #1   
+### Project Page Details: <br>
+#### Page #1
 - Name:  Dashboard
 - Purpose: *The purpose of the dashboard is to display 2 charts with a variety of information.*
 
-#### Page #2   
+#### Page #2
 - Name:  Todo-List
-- Purpose:  *Todo list page will serve as note keeping like a basic todo list add/delete.*
+- Purpose:  *Todo list page will serve as note keeping like a basic todo list add/delete.
+    (This might change by Milestone#3 into A Roller Dex)*
 
-#### Page #3   
+#### Page #3
 - Name:  Mapbox
 - Purpose:   *This will display a interactive map (not-working-yet)*
 
-#### Page #4   
+#### Page #4
 - Name:  Profile
 - Purpose:   *Profile page will display a variety of user information.*
 
@@ -110,26 +112,26 @@ react map library instead. Depending how it goes i'll make a decision. <br>
 <br>
 
 Please discuss the following:
-#### API    
-- Link to the API that is used in your code    
-- Reason you chose the API    
-- Where in your code did you use it?    
+#### API
+- Link to the API that is used in your code
+- Reason you chose the API
+- Where in your code did you use it?
 
 #### 1st Library
-- Link to the library    
-- Link to library tutorial that you made already.    
-- Reason you chose this library.    
-- Where in your code is it used?    
+- Link to the library
+- Link to library tutorial that you made already.
+- Reason you chose this library.
+- Where in your code is it used?
 
-#### 2nd Library    
-- Link to the library    
-- Reason you chose this library.    
-- Where in your code is it used?    
+#### 2nd Library
+- Link to the library
+- Reason you chose this library.
+- Where in your code is it used?
 
-#### Persistent Data    
-- Discuss if you have used MongoDB or Local Storage.    
-- How was it used in your code?    
-- Where in your code is it used?    
+#### Persistent Data
+- Discuss if you have used MongoDB or Local Storage.
+- How was it used in your code?
+- Where in your code is it used?
 
 
 
@@ -147,7 +149,7 @@ Please discuss the following:
 
 <br>
 
-Please discuss the following:  
+Please discuss the following:
 #### Changes
 - Discuss any changes or updates that you have made to your site since Milestone #3.
 
@@ -178,4 +180,3 @@ Please discuss the following:
 
 
 # Interface
-
