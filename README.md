@@ -173,10 +173,3 @@ Please discuss the following:
 
 
 
-
-
-# React Details:
-### Getting Started with Create React App
-
-
-# Interface
