@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import User from "../components/userComp/User";
 
+
 function Profile() {
     const [userData, setUserData] = useState(null);
 
@@ -35,6 +36,7 @@ function Profile() {
                     pwd={userData.login.password}
                 />
             )}
+
         </div>
     );
 }

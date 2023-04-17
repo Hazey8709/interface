@@ -14,7 +14,7 @@ export default UserPic;
 
 const style = {
     profileAvatar: {
-        border: ".2rem solid white",
+        border: ".1rem solid white",
         borderRadius: "10rem",
         backgroundColor: "#0005",
         height: "8.5rem",

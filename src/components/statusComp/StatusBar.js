@@ -25,10 +25,10 @@ const style = {
     headerCont: {
         display: "flex",
         flexDirection: "row",
-        border: ".2rem solid black",
+        border: ".2rem solid #464444",
+        backgroundColor: "#7e7d7d",
         height: "5rem",
         width: "100%" /* Check this after place,ent is done */,
-        backgroundColor: "#0005",
     },
 
     logoCont: {
@@ -36,7 +36,7 @@ const style = {
         flexDirection: "row",
         // border: ".1rem solid red",
         borderRadius: ".3rem",
-        backgroundColor: "#0005",
+        backgroundColor: "#464444",
         height: "3.5rem",
         width: "15rem",
         marginLeft: "auto",
@@ -45,7 +45,7 @@ const style = {
     },
 
     userName: {
-        // border: ".1rem solid red",
+        border: ".1rem solid white",
         borderRadius: ".3rem",
         backgroundColor: "#0005",
         color: "white",
@@ -59,9 +59,9 @@ const style = {
     menuCont: {
         display: "flex",
         flexDirection: "row",
-        // border: ".1rem solid blue",
+        border: ".1rem solid white",
         borderRadius: ".5rem",
-        backgroundColor: "#0005",
+        backgroundColor: "#464444",
         height: "2rem",
         width: "10rem",
 

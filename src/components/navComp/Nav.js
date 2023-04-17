@@ -3,7 +3,7 @@ import UserPic from "./UserPic";
 import { Link } from "react-router-dom";
 import QuickLinks from "./QuickLinks";
 
-const Nav = (prop) => {
+const Nav = () => {
     const [userData, setUserData] = useState(null);
 
     useEffect(() => {
@@ -57,9 +57,9 @@ const style = {
         display: "flex",
         flexDirection: "column",
         position: "relative",
-        border: ".2rem solid black",
+        border: ".2rem solid #464444",
         borderTop: "none",
-        backgroundColor: "#0005",
+        backgroundColor: "#464444",
         width: "15rem",
         height: "54rem",
         //marginTop: "1rem",
@@ -77,7 +77,7 @@ const style = {
 
     navBtnCont: {
         display: "inline-block",
-        border: ".1rem solid limeGreen",
+        //border: ".1rem solid limeGreen",
         //height: "2rem",
         width: "10rem",
         margin: "0 auto",
@@ -91,7 +91,7 @@ const style = {
         //padding: "1rem",
         border: ".1rem solid white",
         borderRadius: "10px",
-        backgroundColor: "#0005",
+        backgroundColor: "black",
         width: "8rem",
         color: "white",
         margin: "0 auto",
