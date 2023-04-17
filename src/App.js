@@ -33,14 +33,12 @@ const style = {
     mainCont: {
         display: "flex",
         flexDirection: "row",
-        //position: "absolute", /* delete after */
         alignItems: "stretch",
-        //border: ".2rem solid red" /* delete after */,
-        borderTop: "none" /* delete after */,
-        borderLeft: "none" /* delete after */,
+        // border: ".2rem solid red" /* delete after */,
+        borderTop: "none",
+        borderLeft: "none",
         height: "100%",
         width: "100%",
-        //marginLeft: "16rem", /* delete after */
     },
 
     mainContent: {
