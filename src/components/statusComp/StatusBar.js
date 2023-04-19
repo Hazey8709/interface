@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaBars, FaSearch, FaCog } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 
@@ -6,10 +7,21 @@ const StatusBar = (props) => {
     return (
         <header style={style.headerCont}>
             <div style={style.menuCont}>
-                <FaBars style={style.menuIcon} />
-                <FaSearch style={style.menuIcon} />
-                <FaCog style={style.menuIcon} />
-                <GoLocation style={style.menuIcon} />
+                <Link to='/Menu' style={style.navLink}>
+                    <FaBars style={style.menuIcon} />
+                </Link>
+
+                <Link to='/Search' style={style.navLink}>
+                    <FaSearch style={style.menuIcon} />
+                </Link>
+
+                <Link to='/Settings' style={style.navLink}>
+                    <FaCog style={style.menuIcon} />
+                </Link>
+
+                <Link to='/Location' style={style.navLink}>
+                    <GoLocation style={style.menuIcon} />
+                </Link>
             </div>
 
             <div style={style.logoCont}>

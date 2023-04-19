@@ -17,23 +17,30 @@ const QuickLinks = (props) => {
     return (
         <footer>
             <div style={style.iconCont}>
-                <a style={style.link} href='https://github.com/Hazey8709'>
+                <a
+                    style={style.link}
+                    target='blank'
+                    href='https://github.com/Hazey8709'
+                >
                     <FaGithub style={style.github} />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://www.facebook.com/people/Noobie-Js/100077721983756/'
                 >
                     <FaFacebook style={style.facebook} />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://www.youtube.com/channel/UC7fWlqdyFBA1FwEVhtDMcuA'
                 >
                     <FaYoutube style={style.youtube} />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://www.bitdegree.org/user/Hazey87/profile'
                 >
                     <FaCircle style={style.circle} />
@@ -43,21 +50,28 @@ const QuickLinks = (props) => {
             <div style={style.iconCont}>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://www.linkedin.com/in/jordan-f-97980725b/'
                 >
                     <FaLinkedin style={style.linkedin} />
                 </a>
-                <a style={style.link} href='https://twitter.com/JordanFortin87'>
+                <a
+                    style={style.link}
+                    target='blank'
+                    href='https://twitter.com/JordanFortin87'
+                >
                     <FaTwitter />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://stackoverflow.com/users/20392612/noobiej?tab=profile'
                 >
                     <FaStackOverflow style={style.stack} />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://portfolium.com/jordanfortin'
                 >
                     <AiFillProfile style={style.portfolium} />
@@ -67,24 +81,28 @@ const QuickLinks = (props) => {
             <div style={style.iconCont}>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://main.d1c74q1u2phtya.amplifyapp.com/'
                 >
                     <FcTodoList style={style.todo} />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://main.d13t589wbjqpur.amplifyapp.com/'
                 >
                     <FaCalculator style={style.calculator} />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://main.do8onr1c6xllw.amplifyapp.com/'
                 >
                     <CiMobile1 style={style.mobile1} />
                 </a>
                 <a
                     style={style.link}
+                    target='blank'
                     href='https://deploy.d1dz9gbyrcncvk.amplifyapp.com/'
                 >
                     <CiMobile2 style={style.mobile2} />

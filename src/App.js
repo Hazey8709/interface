@@ -5,6 +5,10 @@ import Dashboard from "./pages/Dashboard";
 import Todo from "./pages/Todo";
 import Mapbox from "./pages/Mapbox";
 import Profile from "./pages/Profile";
+import Menu from "./pages/Menu";
+import Search from "./pages/Search";
+import Settings from "./pages/Settings";
+import Location from "./pages/Location";
 
 function App() {
     return (
@@ -20,6 +24,11 @@ function App() {
                         <Route path='Todo' element={<Todo />} />
                         <Route path='Mapbox' element={<Mapbox />} />
                         <Route path='Profile' element={<Profile />} />
+
+                        <Route path='Menu' element={<Menu />} />
+                        <Route path='Search' element={<Search />} />
+                        <Route path='Settings' element={<Settings />} />
+                        <Route path='Location' element={<Location />} />
                     </Routes>
                 </section>
             </main>
