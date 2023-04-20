@@ -1,9 +1,10 @@
 import React from "react";
+import SettsPic from "../components/statusComp/SettsPic";
 
 const Settings = () => {
     return (
-        <main style={style.mainCont}>
-            <h4>Settings Page</h4>
+        <main style={style.settCont}>
+            <SettsPic />
         </main>
     );
 };
@@ -11,5 +12,11 @@ const Settings = () => {
 export default Settings;
 
 const style = {
-    mainCont: {},
+    settCont: {
+        //border: ".1rem solid limeGreen",
+        width: "99",
+        height: "100%",
+    },
+
+    // settingsPic: {},
 };

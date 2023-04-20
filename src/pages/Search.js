@@ -1,9 +1,10 @@
 import React from "react";
+import searchPic from "../images/googlePic-1.png";
 
 const Search = () => {
     return (
         <main style={style.mainCont}>
-            <h4>Search Page</h4>
+            <img src={searchPic} alt='Map' style={style.search} />
         </main>
     );
 };
@@ -11,5 +12,13 @@ const Search = () => {
 export default Search;
 
 const style = {
-    mainCont: {},
+    mainCont: {
+        height: "100%",
+        //backgroundColor: "black",
+    },
+
+    search: {
+        height: "100%",
+        width: "100%",
+    },
 };
