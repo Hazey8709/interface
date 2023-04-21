@@ -24,7 +24,7 @@ function App() {
                         <Route path='Todo' element={<Todo />} />
                         <Route path='Mapbox' element={<Mapbox />} />
                         <Route path='Profile' element={<Profile />} />
-
+                        {/* //* Status Bar Links */}
                         <Route path='Menu' element={<Menu />} />
                         <Route path='Search' element={<Search />} />
                         <Route path='Settings' element={<Settings />} />

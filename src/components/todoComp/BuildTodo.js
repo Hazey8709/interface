@@ -62,22 +62,26 @@ const BuildTodo = () => {
     }
 
     return (
-        <div id='todo-list'>
-            <h1>Todo List</h1>
+        <div style={style.todoCont}>
+            <h1 style={style.title}>Todo List</h1>
             <form onSubmit={handleSubmit}>
                 <input
+                    style={style.input}
                     type='text'
                     onChange={(e) => setTodo(e.target.value)}
                     value={todo}
+                    required
                 />
-                <button type='submit'>Add Todo</button>
+                <button style={style.submitBtn} type='submit'>
+                    Add Todo
+                </button>
             </form>
             {todos.map((todo) => (
-                <div key={todo.id} className='todo'>
-                    <div className='todo-text'>
+                <div key={todo.id} style={style.todoItemCont}>
+                    <div style={style.todoText}>
                         <input
                             type='checkbox'
-                            id='completed'
+                            //id='completed'
                             checked={todo.completed}
                             onChange={() => toggleComplete(todo.id)}
                         />
@@ -97,7 +101,7 @@ const BuildTodo = () => {
                             </button>
                         ) : (
                             <button
-                                className='edit-btn'
+                                style={style.editBtn}
                                 onClick={() => setTodoEditing(todo.id)}
                             >
                                 Edit
@@ -105,7 +109,7 @@ const BuildTodo = () => {
                         )}
 
                         <button
-                            className='delete-btn'
+                            style={style.deleteBtn}
                             onClick={() => deleteTodo(todo.id)}
                         >
                             Delete
@@ -118,3 +122,78 @@ const BuildTodo = () => {
 };
 
 export default BuildTodo;
+
+const style = {
+    todoCont: {
+        border: " 0 0 0 0",
+        //height: "100%",
+        //width: "40rem",
+        //margin: "0 auto",
+        backgroundColor: "#c4c3c3",
+    },
+
+    title: {
+        textAlign: "center",
+        fontSize: "52px",
+    },
+
+    input: {
+        display: "flex",
+        border: ".1rem solid black",
+        borderRadius: ".5rem",
+        flexDirection: "row",
+        //textAlign: "center",
+        margin: "0 auto",
+        marginBottom: "2rem",
+        height: "2rem",
+        width: "20rem",
+    },
+
+    submitBtn: {
+        display: "flex",
+        border: ".1rem solid black",
+        borderRadius: ".5rem",
+        //flexDirection: "row",
+        margin: "0 auto",
+        fontWeight: "bold",
+        padding: ".5rem",
+        backgroundColor: "lightGreen",
+        color: "darkGreen",
+    },
+
+    todoItemCont: {
+        display: "inline-block",
+        border: ".1rem solid black",
+        borderRadius: ".5rem",
+        height: "10rem",
+        width: "20rem",
+        textAlign: "center",
+        fontWeight: "bold",
+        backgroundColor: "#0005",
+        margin: "1.5rem",
+        //padding: "1rem",
+    },
+
+    // todoText: {
+    //     //display: "flex",
+    //     border: ".1rem solid black",
+    //     borderRadius: ".5rem",
+    //     height: "12rem",
+    //     width: "22rem",
+    //     textAlign: "center",
+    //     fontWeight: "bold",
+    //     backgroundColor: "#0005",
+    // },
+
+    editBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+    },
+
+    deleteBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        backgroundColor: "red",
+        marginLeft: "1rem",
+    },
+};
