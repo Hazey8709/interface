@@ -5,7 +5,10 @@ import ReadOnly from "../components/rollerDexComp/ReadOnly";
 import Edit from "../components/rollerDexComp/Edit";
 
 const RollerDex = () => {
-    const [contacts, setContacts] = useState(data);
+    const [contacts, setContacts] = useState(
+        () => JSON.parse(localStorage.getItem("contacts")) || data
+    );
+
     const [addFormData, setAddFormData] = useState({
         fullName: "",
         address: "",
@@ -62,6 +65,8 @@ const RollerDex = () => {
 
         const newContacts = [...contacts, newContact];
         setContacts(newContacts);
+
+        localStorage.setItem("contacts", JSON.stringify(newContacts));
     };
 
     //! Edit Form Click 4
@@ -77,12 +82,13 @@ const RollerDex = () => {
         };
 
         const newContacts = [...contacts];
-
         const i = contacts.findIndex((contact) => contact.id === editContactId);
-
         newContacts[i] = editedContact;
+
         setContacts(newContacts);
         setEditContactId(null);
+
+        localStorage.setItem("contacts", JSON.stringify(newContacts));
     };
 
     //! 5
@@ -108,11 +114,12 @@ const RollerDex = () => {
     //! 7
     const handleDeleteClick = (contactId) => {
         const newContacts = [...contacts];
-
         const i = contacts.findIndex((contact) => contact.id === contactId);
         newContacts.splice(i, 1);
 
         setContacts(newContacts);
+
+        localStorage.setItem("contacts", JSON.stringify(newContacts));
     };
 
     return (
