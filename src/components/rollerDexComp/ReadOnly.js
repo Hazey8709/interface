@@ -9,12 +9,14 @@ const ReadOnly = ({ contact, handleEditClick, handleDeleteClick }) => {
             <td>{contact.email}</td>
             <td>
                 <button
+                    style={style.editBtn}
                     type='button'
                     onClick={(e) => handleEditClick(e, contact)}
                 >
                     Edit
                 </button>
                 <button
+                    style={style.delBtn}
                     type='button'
                     onClick={() => handleDeleteClick(contact.id)}
                 >
@@ -26,3 +28,22 @@ const ReadOnly = ({ contact, handleEditClick, handleDeleteClick }) => {
 };
 
 export default ReadOnly;
+
+const style = {
+    editBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        marginRight: "1rem",
+        backgroundColor: "white",
+        color: "darkGreen",
+        fontWeight: "bold",
+    },
+
+    delBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        backgroundColor: "white",
+        color: "darkRed",
+        fontWeight: "bold",
+    },
+};

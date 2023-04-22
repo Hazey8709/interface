@@ -75,10 +75,10 @@ const RollerDex = () => {
 
         const editedContact = {
             id: editContactId,
-            fullName: addFormData.fullName,
-            address: addFormData.address,
-            phoneNumber: addFormData.phoneNumber,
-            email: addFormData.email,
+            fullName: editFormData.fullName,
+            address: editFormData.address,
+            phoneNumber: editFormData.phoneNumber,
+            email: editFormData.email,
         };
 
         const newContacts = [...contacts];

@@ -5,6 +5,7 @@ const Edit = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
         <tr>
             <td>
                 <input
+                    style={style.editInputs}
                     type='text'
                     required='required'
                     placeholder='Enter a name...'
@@ -15,6 +16,7 @@ const Edit = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
             </td>
             <td>
                 <input
+                    style={style.editInputs}
                     type='text'
                     required='required'
                     placeholder='Enter an address...'
@@ -25,6 +27,7 @@ const Edit = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
             </td>
             <td>
                 <input
+                    style={style.editInputs}
                     type='text'
                     required='required'
                     placeholder='Enter a phone number...'
@@ -35,6 +38,7 @@ const Edit = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
             </td>
             <td>
                 <input
+                    style={style.editInputs}
                     type='email'
                     required='required'
                     placeholder='Enter an email...'
@@ -44,8 +48,14 @@ const Edit = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
                 ></input>
             </td>
             <td>
-                <button type='submit'>Save</button>
-                <button type='button' onClick={handleCancelClick}>
+                <button style={style.saveBtn} type='submit'>
+                    Save
+                </button>
+                <button
+                    style={style.cancelBtn}
+                    type='button'
+                    onClick={handleCancelClick}
+                >
                     Cancel
                 </button>
             </td>
@@ -54,3 +64,27 @@ const Edit = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
 };
 
 export default Edit;
+
+const style = {
+    saveBtn: {
+        border: ".1rem solid limeGreen",
+        color: "green",
+        borderRadius: ".2rem",
+        marginRight: "1rem",
+        fontWeight: "bold",
+        padding: ".5rem",
+    },
+
+    cancelBtn: {
+        border: ".1rem solid red",
+        borderRadius: ".2rem",
+        color: "red",
+        fontWeight: "bold",
+    },
+
+    editInputs: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        fontWeight: "bold",
+    },
+};
