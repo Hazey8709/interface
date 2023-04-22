@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Todo from "./pages/Todo";
 import Mapbox from "./pages/Mapbox";
+import RollerDex from "./pages/RollerDex";
 import Profile from "./pages/Profile";
 import Menu from "./pages/Menu";
 import Search from "./pages/Search";
@@ -23,6 +24,7 @@ function App() {
                         <Route path='Dashboard' element={<Dashboard />} />
                         <Route path='Todo' element={<Todo />} />
                         <Route path='Mapbox' element={<Mapbox />} />
+                        <Route path='RollerDex' element={<RollerDex />} />
                         <Route path='Profile' element={<Profile />} />
                         {/* //* Status Bar Links */}
                         <Route path='Menu' element={<Menu />} />
