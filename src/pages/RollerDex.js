@@ -1,23 +1,11 @@
-import React, { useEffect, useState, Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import data from "../moc-data.json";
 import { nanoid } from "nanoid";
 import ReadOnly from "../components/rollerDexComp/ReadOnly";
 import Edit from "../components/rollerDexComp/Edit";
 
 const RollerDex = () => {
-    const [contacts, setContacts] = useState([]);
-
-    //! Load Contacts From LocalStorage
-    useEffect(() => {
-        const contactsData = JSON.parse(localStorage.getItem("contacts"));
-        setContacts(contactsData || data);
-    }, []);
-
-    //! Save Contacts To LocalStorage
-    useEffect(() => {
-        localStorage.setItem("contacts", JSON.stringify(contacts));
-    }, [contacts]);
-
+    const [contacts, setContacts] = useState(data);
     const [addFormData, setAddFormData] = useState({
         fullName: "",
         address: "",
@@ -51,11 +39,11 @@ const RollerDex = () => {
     const handleEditFormChange = (e) => {
         e.preventDefault();
 
-        const fName = e.target.getAttribute("name");
-        const fValue = e.target.value;
+        const fieldName = e.target.getAttribute("name");
+        const fieldValue = e.target.value;
 
         const newFormData = { ...editFormData };
-        newFormData[fName] = fValue;
+        newFormData[fieldName] = fieldValue;
 
         setEditFormData(newFormData);
     };
