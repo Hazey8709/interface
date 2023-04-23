@@ -1,33 +1,36 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useRef } from "react";
 import data from "../moc-data.json";
 import { nanoid } from "nanoid";
 import ReadOnly from "../components/rollerDexComp/ReadOnly";
 import Edit from "../components/rollerDexComp/Edit";
 
 const RollerDex = () => {
-
     const [contacts, setContacts] = useState(
         () => JSON.parse(localStorage.getItem("contacts")) || data
     );
 
-
- 
-
-    const [addFormData, setAddFormData] = useState({
+    const emptyState = {
         fullName: "",
         address: "",
         phoneNumber: "",
         email: "",
+    };
+
+    const [addFormData, setAddFormData] = useState({
+        emptyState,
     });
 
     const [editFormData, setEditFormData] = useState({
-        fullName: "",
-        address: "",
-        phoneNumber: "",
-        email: "",
+        emptyState,
+        // fullName: "",
+        // address: "",
+        // phoneNumber: "",
+        // email: "",
     });
 
     const [editContactId, setEditContactId] = useState(null);
+
+    const addContactFormRef = useRef();
 
     //! Add Form Change 1
     const handleAddFormChange = (e) => {
@@ -71,6 +74,9 @@ const RollerDex = () => {
         setContacts(newContacts);
 
         localStorage.setItem("contacts", JSON.stringify(newContacts));
+
+        // Reset the form
+        addContactFormRef.current.reset();
     };
 
     //! Edit Form Click 4
@@ -164,7 +170,11 @@ const RollerDex = () => {
                 </table>
             </form>
             <h2 style={style.addContactTitle}>Add a Contact</h2>
-            <form style={style.formCont} onSubmit={handleAddFormSubmit}>
+            <form
+                style={style.formCont}
+                onSubmit={handleAddFormSubmit}
+                ref={addContactFormRef}
+            >
                 <input
                     style={style.inputs}
                     type='text'
