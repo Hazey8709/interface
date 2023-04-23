@@ -148,7 +148,7 @@ const RollerDex = () => {
                     </thead>
                     <tbody>
                         {contacts.map((contact) => (
-                            <Fragment>
+                            <Fragment key={contact.id}>
                                 {editContactId === contact.id ? (
                                     <Edit
                                         editFormData={editFormData}
