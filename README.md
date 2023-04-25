@@ -16,7 +16,7 @@
 **YouTube**: *https://www.youtube.com/channel/UC7fWlqdyFBA1FwEVhtDMcuA* <br>
 **LinkedIn**: *https://www.linkedin.com/in/jordan-f-97980725b/* <br>
 <br>
-**Project Showcase Link**:  ** <br>
+**Project Showcase Link**:  *https://youtu.be/RqlB9D_81E8* <br>
 
 <hr>
 
