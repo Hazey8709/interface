@@ -16,6 +16,6 @@ const style = {
         border: ".1rem solid",
         height: "100%",
         width: "100%",
-        backgroundColor: "#c4c3c3",
+        backgroundColor: "#d1edf7",
     },
 };
