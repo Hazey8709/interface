@@ -3,10 +3,23 @@ const { v4: uuid4 } = require("uuid");
 
 const localStorage_KEY = "todos";
 
+const staleTodos = [
+    {
+        id: uuid4(),
+        text: "Practice JS",
+        completed: false,
+    },
+    {
+        id: uuid4(),
+        text: "Practice React.js",
+        completed: false,
+    },
+];
+
 const BuildTodo = () => {
     const [todos, setTodos] = React.useState(() => {
         const localData = localStorage.getItem(localStorage_KEY);
-        return localData ? JSON.parse(localData) : [];
+        return localData ? JSON.parse(localData) : staleTodos;
     });
     const [todo, setTodo] = React.useState("");
     const [todoEditing, setTodoEditing] = React.useState(null);
@@ -16,8 +29,8 @@ const BuildTodo = () => {
         const temp = localStorage.getItem(localStorage_KEY);
         const loadedTodos = JSON.parse(temp);
 
-        console.log("temp:", temp);
-        console.log("loadedTodos:", loadedTodos);
+        // console.log("temp:", temp);
+        // console.log("loadedTodos:", loadedTodos);
 
         if (loadedTodos) {
             setTodos(loadedTodos);
@@ -92,12 +105,12 @@ const BuildTodo = () => {
                     <div style={style.todoText}>
                         <input
                             type='checkbox'
-                            //id='completed'
                             checked={todo.completed}
                             onChange={() => toggleComplete(todo.id)}
                         />
                         {todo.id === todoEditing ? (
                             <input
+                                style={style.editInput}
                                 type='text'
                                 onChange={(e) => setEditingText(e.target.value)}
                             />
@@ -105,9 +118,12 @@ const BuildTodo = () => {
                             <div>{todo.text}</div>
                         )}
                     </div>
-                    <div>
+                    <div style={style.btnsCont}>
                         {todo.id === todoEditing ? (
-                            <button onClick={() => submitEdits(todo.id)}>
+                            <button
+                                style={style.subEditBtn}
+                                onClick={() => submitEdits(todo.id)}
+                            >
                                 Submit Edit
                             </button>
                         ) : (
@@ -156,6 +172,10 @@ const style = {
         width: "20rem",
     },
 
+    editInput: {
+        marginTop: "1rem",
+    },
+
     submitBtn: {
         display: "flex",
         border: ".1rem solid black",
@@ -181,15 +201,35 @@ const style = {
         //padding: "1rem",
     },
 
+    btnsCont: {
+        border: ".1rem solid black",
+        marginTop: "4rem",
+        padding: ".2rem",
+    },
+
     editBtn: {
         border: ".1rem solid black",
         borderRadius: ".2rem",
+        backgroundColor: "darkGreen",
+        color: "white",
+        fontWeight: "bold",
+    },
+
+    subEditBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        backgroundColor: "white",
+        color: "darkGreen",
+        fontWeight: "bold",
+        // marginTop: ".2rem",
     },
 
     deleteBtn: {
         border: ".1rem solid black",
         borderRadius: ".2rem",
-        backgroundColor: "red",
+        backgroundColor: "#0005",
+        color: "red",
         marginLeft: "1rem",
+        fontWeight: "bold",
     },
 };
