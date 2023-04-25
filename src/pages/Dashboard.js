@@ -35,6 +35,7 @@ const style = {
         position: "relative",
         height: "100%",
         width: "100%",
+        cursor: "pointer",
     },
 
     dashTitle: {

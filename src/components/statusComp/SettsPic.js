@@ -13,9 +13,6 @@ export default SettsPic;
 
 const style = {
     settCont: {
-        //border: ".1rem solid red",
-        //backgroundImage: "cover",
-        //height: "100%",
         width: "100%",
     },
 

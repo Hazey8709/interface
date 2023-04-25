@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaSearch, FaCog } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
+import Logo from "../../images/noobiejLogo.png";
 
 const StatusBar = (props) => {
     return (
@@ -26,6 +27,7 @@ const StatusBar = (props) => {
 
             <div style={style.logoCont}>
                 <h4 style={style.userName}>{props.userName}</h4>
+                <img src={Logo} alt='Map' style={style.logo} />
             </div>
         </header>
     );
@@ -57,6 +59,16 @@ const style = {
         marginLeft: "auto",
         marginTop: ".7rem",
         marginRight: ".5rem",
+        cursor: "pointer",
+    },
+
+    logo: {
+        border: ".1rem solid white",
+        borderRadius: ".5rem",
+        height: "2rem",
+        width: "8rem",
+        marginTop: ".7rem",
+        marginLeft: "1rem",
     },
 
     userName: {
