@@ -12,12 +12,6 @@ const Location = () => {
 export default Location;
 
 const style = {
-    mapCont: {
-        //border: ".1rem solid red",
-        //height: "40%",
-        //width: "100%",
-    },
-
     map: {
         height: "100%",
         width: "100%",

@@ -4,7 +4,10 @@ const { v4: uuid4 } = require("uuid");
 const localStorage_KEY = "todos";
 
 const BuildTodo = () => {
-    const [todos, setTodos] = React.useState([]);
+    const [todos, setTodos] = React.useState(() => {
+        const localData = localStorage.getItem(localStorage_KEY);
+        return localData ? JSON.parse(localData) : [];
+    });
     const [todo, setTodo] = React.useState("");
     const [todoEditing, setTodoEditing] = React.useState(null);
     const [editingText, setEditingText] = React.useState("");
@@ -12,8 +15,9 @@ const BuildTodo = () => {
     React.useEffect(() => {
         const temp = localStorage.getItem(localStorage_KEY);
         const loadedTodos = JSON.parse(temp);
-        console.log("loadedTodos:", loadedTodos);
+
         console.log("temp:", temp);
+        console.log("loadedTodos:", loadedTodos);
 
         if (loadedTodos) {
             setTodos(loadedTodos);
@@ -133,9 +137,6 @@ export default BuildTodo;
 const style = {
     todoCont: {
         border: " 0 0 0 0",
-        //height: "100%",
-        //width: "40rem",
-        //margin: "0 auto",
         backgroundColor: "#d1edf7",
     },
 
@@ -149,7 +150,6 @@ const style = {
         border: ".1rem solid black",
         borderRadius: ".5rem",
         flexDirection: "row",
-        //textAlign: "center",
         margin: "0 auto",
         marginBottom: "2rem",
         height: "2rem",
@@ -160,7 +160,7 @@ const style = {
         display: "flex",
         border: ".1rem solid black",
         borderRadius: ".5rem",
-        //flexDirection: "row",
+
         margin: "0 auto",
         fontWeight: "bold",
         padding: ".5rem",
@@ -180,17 +180,6 @@ const style = {
         margin: "1.5rem",
         //padding: "1rem",
     },
-
-    // todoText: {
-    //     //display: "flex",
-    //     border: ".1rem solid black",
-    //     borderRadius: ".5rem",
-    //     height: "12rem",
-    //     width: "22rem",
-    //     textAlign: "center",
-    //     fontWeight: "bold",
-    //     backgroundColor: "#0005",
-    // },
 
     editBtn: {
         border: ".1rem solid black",

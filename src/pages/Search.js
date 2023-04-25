@@ -14,7 +14,6 @@ export default Search;
 const style = {
     mainCont: {
         height: "100%",
-        //backgroundColor: "black",
     },
 
     search: {

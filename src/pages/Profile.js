@@ -45,11 +45,7 @@ const style = {
     mainCont: {
         display: "flex",
         flexDirection: "column",
-        // border: "1px solid red",
-        // margin: "0 auto",
         backgroundColor: "#d1edf7",
-        //width: "90rem",
-        //height: "50rem",
         height: "100%",
     },
 

@@ -15,7 +15,6 @@ const style = {
     mainCont: {},
 
     menu: {
-        //height: "50%",
         width: "100%",
     },
 };

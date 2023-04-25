@@ -5,9 +5,6 @@ import "mapbox-gl/dist/mapbox-gl.css";
 const MAPBOX_TOKEN =
     "pk.eyJ1IjoiaGF6ZXk4NyIsImEiOiJjbGFsd2Izd2swOWU2M3dwdzJ4YTlmd3kwIn0.Qx7PjlOyLEJpRlhAMsj6XQ";
 
-//! old key
-// "pk.eyJ1IjoiaGF6ZXk4NyIsImEiOiJjbGFsdzUzYzkwOXBjM3FudGZ1ejUzazdvIn0.vY9_up6mCWaLDl1WuX1eDw";
-
 const Mapbox = () => {
     const [viewState, setViewState] = React.useState({
         latitude: 42.355,
