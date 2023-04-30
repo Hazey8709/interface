@@ -31,9 +31,11 @@ const style = {
     dashCont: {
         display: "flex",
         flexDirection: "column",
+        backgroundColor: "#d1edf7",
         position: "relative",
         height: "100%",
         width: "100%",
+        cursor: "pointer",
     },
 
     dashTitle: {

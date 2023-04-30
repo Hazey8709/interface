@@ -45,8 +45,7 @@ const style = {
         backgroundColor: "#0005",
         width: "50rem",
         margin: "0 auto",
-        // marginLeft: "5rem",
-        // marginRight: "rem",
+        
         marginTop: "5rem",
     },
 

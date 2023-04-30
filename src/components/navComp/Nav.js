@@ -37,6 +37,10 @@ const Nav = () => {
                     Mapbox
                 </Link>
 
+                <Link to='/RollerDex' style={style.navLink}>
+                    RollerDex
+                </Link>
+
                 <Link to='/Profile' style={style.navLink}>
                     Profile
                 </Link>
@@ -81,7 +85,7 @@ const style = {
         //height: "2rem",
         width: "10rem",
         margin: "0 auto",
-        marginTop: "8rem",
+        marginTop: "5rem",
         //padding: ".5rem",
         textAlign: "center",
     },
@@ -95,7 +99,7 @@ const style = {
         width: "8rem",
         color: "white",
         margin: "0 auto",
-        marginTop: "1.5rem",
+        marginTop: "1rem",
         padding: ".3rem",
         //textAlign: "center",
         fontSize: "24px",

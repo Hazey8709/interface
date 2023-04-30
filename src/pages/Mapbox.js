@@ -1,22 +1,39 @@
 import React from "react";
-import mapboxgl from "mapbox-gl";
+import Map, { Marker } from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+
+const MAPBOX_TOKEN =
+    "pk.eyJ1IjoiaGF6ZXk4NyIsImEiOiJjbGFsd2Izd2swOWU2M3dwdzJ4YTlmd3kwIn0.Qx7PjlOyLEJpRlhAMsj6XQ";
 
 const Mapbox = () => {
-    const buildMap = () => {
-        mapboxgl.accessToken =
-            "pk.eyJ1IjoiaGF6ZXk4NyIsImEiOiJjbGFsdzUzYzkwOXBjM3FudGZ1ejUzazdvIn0.vY9_up6mCWaLDl1WuX1eDw";
-        const map = new mapboxgl.Map({
-            container: "mapContainer", // container ID
-            style: "mapbox://styles/hazey87/clalzmyui000j15qr0pb7cicy", // style URL
-            center: [-74.5, 40], // starting position [lng, lat]
-            zoom: 9, // starting zoom
-            projection: "globe", // display the map as a 3D globe
-        });
-    };
+    const [viewState, setViewState] = React.useState({
+        latitude: 42.355,
+        longitude: -71.062,
+        zoom: 7, // starting zoom
+        projection: "globe", // display the map as a 3D globe
+    });
 
-    //buildMap();
-
-    return <div></div>;
+    return (
+        <main style={style.mainCont}>
+            <Map
+                {...viewState}
+                onMove={(evt) => setViewState(evt.viewState)}
+                mapStyle='mapbox://styles/hazey87/clalzkem2003c14qp5ax1x6k4'
+                mapboxAccessToken={MAPBOX_TOKEN}
+            >
+                <Marker longitude={-71.062} latitude={42.355} color='red' />
+            </Map>
+        </main>
+    );
 };
 
 export default Mapbox;
+
+const style = {
+    mainCont: {
+        //border: ".1rem solid red",
+        height: "100%",
+        width: "100%",
+        backgroundColor: "#232323",
+    },
+};

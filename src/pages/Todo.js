@@ -13,6 +13,9 @@ export default Todo;
 
 const style = {
     todoCont: {
-        border: ".1rem solid red",
+        border: ".1rem solid",
+        height: "100%",
+        width: "100%",
+        backgroundColor: "#d1edf7",
     },
 };
