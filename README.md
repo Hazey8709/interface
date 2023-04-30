@@ -15,9 +15,13 @@
 **FaceBook**: *https://www.facebook.com/profile.php?id=100077721983756* <br>
 **YouTube**: *https://www.youtube.com/channel/UC7fWlqdyFBA1FwEVhtDMcuA* <br>
 **LinkedIn**: *https://www.linkedin.com/in/jordan-f-97980725b/* <br>
+<br>
+**Project Showcase Link**:  *https://youtu.be/RqlB9D_81E8* <br>
 
+<hr>
 
-# Branch:
+# Branch
+
 
 **Main**: Final-Project  <br>
 **Dev**: Development <br>
@@ -44,9 +48,32 @@ but page does work*. <br>
 # Library's
 **Recharts**: **Link**: *https://recharts.org/en-US/guide* <br>
 **Mapbox-gl**: <br>
+=======
+**Main**: Final Project <br>
+**Dev**: Development<br>
+**MileStone2**: Mile Stone #2 <br>
+**MileStone3**: Mile Stone #3 <br>
+
+<hr>
+
+# API's / Library's
+
+#### API's    
+**Recharts**: *https://recharts.org/en-US* <br>
+*(DashBoard Maps)*. <br>
+<br>
+
 **Random User Generator**: *https://randomuser.me/* <br>
+*(User Profile)*. <br>  
 
+#### Library's
+**React Icons**: *https://react-icons.github.io/react-icons/* <br>
+**React Router**: *https://reactrouter.com/en/main* <br>
+**NPM uuidV4**: *https://www.npmjs.com/package/uuidv4* <br>
+**React Map-gl**: *https://visgl.github.io/react-map-gl/docs/get-started/get-started* <br>
+**Mapbox-gl**: *https://www.mapbox.com/* <br>
 
+<hr>
 
 # Details:
 *Work-In-Progress* <br>
@@ -57,7 +84,7 @@ look things up on the 3D/2D map and Has a User Profile. We will be using Rechart
 Faker.js API.*
 
 
-
+<hr>
 
 # Milestones:
 
@@ -100,61 +127,21 @@ react map library instead. Depending how it goes i'll make a decision. <br>
 
 #### Page #3
 - Name:  Mapbox
-- Purpose:   *This will display a interactive map (not-working-yet)*
+- Purpose:   *This will display a interactive map*
 
-#### Page #4
+#### Page #4   
+- Name:  Roller Dex
+- Purpose:   *This Will be A Phone Book, Contacts. *
+
+#### Page #5   
+
 - Name:  Profile
 - Purpose:   *Profile page will display a variety of user information.*
 
 
 
-<br>
-<br>
 
 
-
-
------------------------------------------------------------------------------------------------------ <br>
-## 📢 &nbsp; Milestone Check-Ins
-<br>
-
-### Milestone 3
-⚙️ Overview - Write overview here.
-<br>
-🌵 Challenges - Write challenges here.
-<br>
-🏆 Accomplishments - Write Accomplishments here.
-<br>
-🔮 Next Steps - Write your next steps here.
-
-<br>
-
-Please discuss the following:
-#### API
-- Link to the API that is used in your code
-- Reason you chose the API
-- Where in your code did you use it?
-
-#### 1st Library
-- Link to the library
-- Link to library tutorial that you made already.
-- Reason you chose this library.
-- Where in your code is it used?
-
-#### 2nd Library
-- Link to the library
-- Reason you chose this library.
-- Where in your code is it used?
-
-#### Persistent Data
-- Discuss if you have used MongoDB or Local Storage.
-- How was it used in your code?
-- Where in your code is it used?
-
-
-
-
-<br>
 
 ### Milestone 4
 ⚙️ Overview - Write overview here.
