@@ -26,7 +26,9 @@ const StatusBar = (props) => {
             </div>
 
             <div style={style.logoCont}>
-                <h4 style={style.userName}>{props.userName}</h4>
+                <Link to='/Profile' style={style.profileLink}>
+                    <h4 style={style.userName}>{props.userName}</h4>
+                </Link>
                 <img src={Logo} alt='Map' style={style.logo} />
             </div>
         </header>
