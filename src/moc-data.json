@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "fullName": "Jenny Sue",
+        "address": "3 waterfoot road",
+        "phoneNumber": "508-672-7516",
+        "email": "jenny.Sue@gmail.com"
+    },
+    {
+        "id": 2,
+        "fullName": "Jessica warren",
+        "address": "4 tall town",
+        "phoneNumber": "601-211-7616",
+        "email": "jessica.warren@gmail.com"
+    },
+    {
+        "id": 3,
+        "fullName": "Tony Frank",
+        "address": "11 lee road",
+        "phoneNumber": "788-716-7516",
+        "email": "tony.frank@gmail.com"
+    },
+    {
+        "id": 4,
+        "fullName": "Jordan Clark",
+        "address": "333 miltown ln",
+        "phoneNumber": "508-962-1121",
+        "email": "jordanC.clark@gmail.com"
+    },
+    {
+        "id": 5,
+        "fullName": "Raymond Edwards",
+        "address": "99 blue acres ln",
+        "phoneNumber": "617-962-6516",
+        "email": "Ray.Edwards@gmail.com"
+    },
+    {
+        "id": 6,
+        "fullName": "Jordan Smeed",
+        "address": "170 wellington st",
+        "phoneNumber": "508-962-1121",
+        "email": "jordanS.smeed@gmail.com"
+    },
+    {
+        "id": 7,
+        "fullName": "Kent Clark",
+        "address": "333804 miltown blvd",
+        "phoneNumber": "508-962-1121",
+        "email": "superMan@gmail.com"
+    }
+]

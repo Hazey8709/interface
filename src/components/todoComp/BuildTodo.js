@@ -1,18 +1,36 @@
 import React from "react";
-const { v4: uuidv4 } = require("uuid");
-console.log(uuidv4);
+const { v4: uuid4 } = require("uuid");
 
-const Local_STORAGE_KEY = "Saved-Todos";
+const localStorage_KEY = "todos";
+
+const staleTodos = [
+    {
+        id: uuid4(),
+        text: "Practice JS",
+        completed: false,
+    },
+    {
+        id: uuid4(),
+        text: "Practice React.js",
+        completed: false,
+    },
+];
 
 const BuildTodo = () => {
-    const [todos, setTodos] = React.useState([]);
+    const [todos, setTodos] = React.useState(() => {
+        const localData = localStorage.getItem(localStorage_KEY);
+        return localData ? JSON.parse(localData) : staleTodos;
+    });
     const [todo, setTodo] = React.useState("");
     const [todoEditing, setTodoEditing] = React.useState(null);
     const [editingText, setEditingText] = React.useState("");
 
     React.useEffect(() => {
-        const temp = localStorage.getItem("todos");
+        const temp = localStorage.getItem(localStorage_KEY);
         const loadedTodos = JSON.parse(temp);
+
+        // console.log("temp:", temp);
+        // console.log("loadedTodos:", loadedTodos);
 
         if (loadedTodos) {
             setTodos(loadedTodos);
@@ -20,14 +38,20 @@ const BuildTodo = () => {
     }, []);
 
     React.useEffect(() => {
-        localStorage.setItem(Local_STORAGE_KEY, JSON.stringify(todos));
+        localStorage.setItem(localStorage_KEY, JSON.stringify(todos));
     }, [todos]);
+
+    React.useEffect(() => {
+        if (todoEditing !== null) {
+            setEditingText(todos.find((todo) => todo.id === todoEditing).text);
+        }
+    }, [todoEditing, todos]);
 
     function handleSubmit(e) {
         e.preventDefault();
 
         const newTodo = {
-            id: uuidv4(),
+            id: uuid4(),
             text: todo,
             completed: false,
         };
@@ -62,27 +86,31 @@ const BuildTodo = () => {
     }
 
     return (
-        <div id='todo-list'>
-            <h1>Todo List</h1>
+        <div style={style.todoCont}>
+            <h1 style={style.title}>Todo List</h1>
             <form onSubmit={handleSubmit}>
                 <input
+                    style={style.input}
                     type='text'
                     onChange={(e) => setTodo(e.target.value)}
                     value={todo}
+                    required
                 />
-                <button type='submit'>Add Todo</button>
+                <button style={style.submitBtn} type='submit'>
+                    Add Todo
+                </button>
             </form>
             {todos.map((todo) => (
-                <div key={todo.id} className='todo'>
-                    <div className='todo-text'>
+                <div key={todo.id} style={style.todoItemCont}>
+                    <div style={style.todoText}>
                         <input
                             type='checkbox'
-                            id='completed'
                             checked={todo.completed}
                             onChange={() => toggleComplete(todo.id)}
                         />
                         {todo.id === todoEditing ? (
                             <input
+                                style={style.editInput}
                                 type='text'
                                 onChange={(e) => setEditingText(e.target.value)}
                             />
@@ -90,14 +118,17 @@ const BuildTodo = () => {
                             <div>{todo.text}</div>
                         )}
                     </div>
-                    <div className='todo-actions'>
+                    <div style={style.btnsCont}>
                         {todo.id === todoEditing ? (
-                            <button onClick={() => submitEdits(todo.id)}>
+                            <button
+                                style={style.subEditBtn}
+                                onClick={() => submitEdits(todo.id)}
+                            >
                                 Submit Edit
                             </button>
                         ) : (
                             <button
-                                className='edit-btn'
+                                style={style.editBtn}
                                 onClick={() => setTodoEditing(todo.id)}
                             >
                                 Edit
@@ -105,7 +136,7 @@ const BuildTodo = () => {
                         )}
 
                         <button
-                            className='delete-btn'
+                            style={style.deleteBtn}
                             onClick={() => deleteTodo(todo.id)}
                         >
                             Delete
@@ -118,3 +149,87 @@ const BuildTodo = () => {
 };
 
 export default BuildTodo;
+
+const style = {
+    todoCont: {
+        border: " 0 0 0 0",
+        backgroundColor: "#d1edf7",
+    },
+
+    title: {
+        textAlign: "center",
+        fontSize: "52px",
+    },
+
+    input: {
+        display: "flex",
+        border: ".1rem solid black",
+        borderRadius: ".5rem",
+        flexDirection: "row",
+        margin: "0 auto",
+        marginBottom: "2rem",
+        height: "2rem",
+        width: "20rem",
+    },
+
+    editInput: {
+        marginTop: "1rem",
+    },
+
+    submitBtn: {
+        display: "flex",
+        border: ".1rem solid black",
+        borderRadius: ".5rem",
+
+        margin: "0 auto",
+        fontWeight: "bold",
+        padding: ".5rem",
+        backgroundColor: "lightGreen",
+        color: "darkGreen",
+    },
+
+    todoItemCont: {
+        display: "inline-block",
+        border: ".1rem solid black",
+        borderRadius: ".5rem",
+        height: "10rem",
+        width: "20rem",
+        textAlign: "center",
+        fontWeight: "bold",
+        backgroundColor: "#0005",
+        margin: "1.5rem",
+        //padding: "1rem",
+    },
+
+    btnsCont: {
+        border: ".1rem solid black",
+        marginTop: "4rem",
+        padding: ".2rem",
+    },
+
+    editBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        backgroundColor: "darkGreen",
+        color: "white",
+        fontWeight: "bold",
+    },
+
+    subEditBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        backgroundColor: "white",
+        color: "darkGreen",
+        fontWeight: "bold",
+        // marginTop: ".2rem",
+    },
+
+    deleteBtn: {
+        border: ".1rem solid black",
+        borderRadius: ".2rem",
+        backgroundColor: "#0005",
+        color: "red",
+        marginLeft: "1rem",
+        fontWeight: "bold",
+    },
+};

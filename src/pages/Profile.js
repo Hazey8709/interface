@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import User from "../components/userComp/User";
 
-
 function Profile() {
     const [userData, setUserData] = useState(null);
 
@@ -36,7 +35,6 @@ function Profile() {
                     pwd={userData.login.password}
                 />
             )}
-
         </div>
     );
 }
@@ -47,10 +45,8 @@ const style = {
     mainCont: {
         display: "flex",
         flexDirection: "column",
-        // border: "1px solid red",
-        // margin: "0 auto",
-        width: "90rem",
-        height: "50rem",
+        backgroundColor: "#d1edf7",
+        height: "100%",
     },
 
     pageTitle: {
@@ -58,5 +54,6 @@ const style = {
         textDecoration: "underline",
         fontSize: "3rem",
         color: "black",
+        cursor: "pointer",
     },
 };

@@ -1,19 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaBars, FaSearch, FaCog } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
+import Logo from "../../images/noobiejLogo.png";
 
 const StatusBar = (props) => {
     return (
         <header style={style.headerCont}>
             <div style={style.menuCont}>
-                <FaBars style={style.menuIcon} />
-                <FaSearch style={style.menuIcon} />
-                <FaCog style={style.menuIcon} />
-                <GoLocation style={style.menuIcon} />
+                <Link to='/Menu' style={style.navLink}>
+                    <FaBars style={style.menuIcon} />
+                </Link>
+
+                <Link to='/Search' style={style.navLink}>
+                    <FaSearch style={style.menuIcon} />
+                </Link>
+
+                <Link to='/Settings' style={style.navLink}>
+                    <FaCog style={style.menuIcon} />
+                </Link>
+
+                <Link to='/Location' style={style.navLink}>
+                    <GoLocation style={style.menuIcon} />
+                </Link>
             </div>
 
             <div style={style.logoCont}>
-                <h4 style={style.userName}>{props.userName}</h4>
+                <Link to='/Profile' style={style.profileLink}>
+                    <h4 style={style.userName}>{props.userName}</h4>
+                </Link>
+                <img src={Logo} alt='Map' style={style.logo} />
             </div>
         </header>
     );
@@ -26,9 +42,12 @@ const style = {
         display: "flex",
         flexDirection: "row",
         border: ".2rem solid #464444",
+        borderRight: ".1rem solid #464444",
+        borderLeft: "none",
+        borderTop: "none",
         backgroundColor: "#7e7d7d",
         height: "5rem",
-        width: "100%" /* Check this after place,ent is done */,
+        width: "100%" /* Check this after placement is done */,
     },
 
     logoCont: {
@@ -42,6 +61,16 @@ const style = {
         marginLeft: "auto",
         marginTop: ".7rem",
         marginRight: ".5rem",
+        cursor: "pointer",
+    },
+
+    logo: {
+        border: ".1rem solid white",
+        borderRadius: ".5rem",
+        height: "2rem",
+        width: "8rem",
+        marginTop: ".7rem",
+        marginLeft: "1rem",
     },
 
     userName: {
