@@ -143,30 +143,7 @@ react map library instead. Depending how it goes i'll make a decision. <br>
 
 
 
-### Milestone 4
-⚙️ Overview - Write overview here.
-<br>
-🌵 Challenges - Write challenges here.
-<br>
-🏆 Accomplishments - Write Accomplishments here.
-<br>
-🔮 Next Steps - Write your next steps here.
 
-<br>
-
-Please discuss the following:
-#### Changes
-- Discuss any changes or updates that you have made to your site since Milestone #3.
-
-#### Styling
-- Discuss the process you used to style your page.
-
-#### Link To Overview Video
-- Once it is created, put the link to your overview video of your site here.
-
-<br>
-<br>
-<hr/>
 
 
 
